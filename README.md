@@ -4,7 +4,7 @@
 
 为项目峰会所准备的Java项目
 论坛形式的交流平台，能为正在学习编程技术的小伙伴提供多种服务
-[关于MarkDown语言](#https://github.com/guodongxiaren/README#readme)
+### [关于MarkDown语言](https://github.com/guodongxiaren/README#readme)
 
 ## 已完成功能
 
