@@ -24,3 +24,6 @@ hs_err_pid*
 
 # MacOS finder property file
 .DS_Store
+
+# Intellj Idea project setting file
+*.iml
