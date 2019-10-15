@@ -27,3 +27,9 @@ hs_err_pid*
 
 # Intellj Idea project setting file
 *.iml
+
+# Eclipse Project files
+.settings/
+.classpath
+.gitignore
+.project
