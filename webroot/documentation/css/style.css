@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+html {margin:0; height:100%; width:100%}
+* { list-style:none; margin:0; padding:0; border:none}
+body{font-family:"微软雅黑";font-size:12px; height:100%}
+a { text-decoration:none; color:#000}
+.clear { clear:both}
+
+.headiv { width:100%; height:114px; background:#fff; position:relative}
+/*登陆页面*/
+.container { width:100%; height:100%;  background:url(../img/loginbg.jpg) center 200px no-repeat;}
+.loginbox { width:522px; margin:0 auto;height:696px; background:url(../img/login_topbg.jpg) no-repeat center 100px; position:relative }
+.loginform { width:520px; min-height:540px;  position:absolute; top:250px; left:0; z-index:5; box-shadow:0px 1px 5px #999; -moz-box-shadow:0px 1px 5px #999; -ms-box-shadow:0px 1px 5px #999; -o-box-shadow:0px 1px 5px #999; -webkit-box-shadow:0px 1px 5px #999; background:url(../img/login_logo.jpg) no-repeat center 50px #fff;}
+.loginform>h2 { display:block; height:52px; line-height:52px; text-align:center; font-size:34px; background:#56c68b; color:#fff; font-weight:normal; font-family:"黑体"}
+.loginform form { padding:0 35px;}
+.loginform form table { margin-top:5px;}
+.loginform form td span { display:block; height:30px; line-height:30px; font-size:16px;}
+.loginform form td input {  padding-top:12px; padding-bottom:12px; font-size:14px; width:414px; border:2px solid #bdbcbc/*#56c68b*/; border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px; -o-border-radius:8px;-webkit-border-radius:8px;border-radius:8px; padding-left:30px; background:url(../img/icons.png) no-repeat ;}
+.loginform form td input.uname { background-position:5px -333px}
+.loginform form td input.pword { background-position:5px -389px}
+.loginform form td input.valput { background-position:5px -440px; width:250px; float:left}
+.validimg { float:right; border:2px solid #bdbcbc}
+.logbtn { display:block; height:50px; line-height:50px; color:#fff; font-size:26px; background:#56c68b; text-align:center;border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;-webkit-border-radius:10px;}
+
+
+/*整体框架*/
+.logotag { float:left}
+.headiv a.logo { display:inline-block; width:440px; height:65px; margin:30px 0 0 13px;}
+.headiv b.line { display:inline-block; width:3px; height:27px; background:url(../img/icons.png) no-repeat -107px 0; margin-bottom:15px; margin-left:10px; margin-right:20px}
+.headiv a.username {display:inline-block; float:left; margin-top:53px; height:23px; width:auto; line-height:23px; font-family:"黑体"; font-size:14px; padding-left:36px; background:url(../img/icons.png) no-repeat 0 -79px}
+.headiv a.username i { font-style:normal; font-size:14px;font-family:"黑体"; color:#dc1e1b }
+.btnbox { display:block; width:178px; height:114px; line-height:150px; float:right; margin-right:100px;}
+.btnbox a { display:inline-block; width:79px; height:29px; background:url(../img/icons.png) no-repeat}
+.btnbox a.update { background-position:0 0;}
+.btnbox a.exit { background-position:0 -32px; margin-left:20px}
+
+.messagebox {position:absolute; top:134px; left:0; right:0; bottom:6px; padding-left:200px}
+.messageleft { width:200px; height:100%; background:#fff; float:left; margin-left:-200px;}
+.Fstage { width:200px;}
+.Fstage>li { border-bottom:2px solid #fff}
+.Fstage>li:hover { cursor:pointer}
+.Fstage>li>a { display:block; height:34px; background:#56c68b; font-size:16px; font-weight:normal; width:160px; padding:0 20px; line-height:34px; position:relative}
+.Fstage>li>a em { display:block; width:22px; height:22px; background:url(../img/icons.png) no-repeat ; float:left; margin-top:5px; margin-right:5px}
+.Fstage>li>a em.e1 { background-position:0 -123px;}
+.Fstage>li>a em.e2 { background-position:0 -152px;}
+.Fstage>li>a em.e3 { background-position:0 -177px;}
+.Fstage>li>a em.e4 { background-position:0 -206px;}
+.Fstage>li>a em.e5 { background-position:0 -238px;}
+.Fstage>li>a em.e6 { background-position:0 -268px;}
+.Fstage>li>a em.e7 { background-position:0 -292px;}
+.Fstage>li ul {  margin-top:10px; margin-bottom:10px;/* display:none*/}
+.Fstage>li ul li { padding:0 20px 0 47px; line-height:30px;}
+.Fstage>li ul li a { font-size:14px; display:block}
+.Fstage>li ul li:hover { background:#edfbf4; }
+.Fstage>li ul li:hover a { color:#06582d }
+.messageright {width:100%; height:100%; float:left; background:#e9ebef}
+
+
+/*正在开发及欢迎页面*/
+.picbig { width:100%; height:100%; text-align:center;}
+.picbig img { margin-top:120px;}
+
+/*账户信息及数据统计*/
+.formpage { padding:0 50px; height:100%; margin:0 auto; overflow:scroll}
+.formpage h2 { color:#fc5115; font-size:20px; font-weight:normal; line-height:40px; border-bottom:2px solid #a2a5a5; position:relative}
+.formpage h3 { font-size:18px; color:#444444; font-weight:normal;}
+.information { display:block;}
+.headpic { display:inline-block; width:114px; height:114px;  float:left; box-shadow:0 1px 3px #ccc}
+.headpic1 { display:inline-block; width:145px; height:145px;  float:left; box-shadow:0 1px 3px #ccc}
+.headpic img { width:114px; height:114px;}
+.headpic1 img { width:145px; height:145px;}
+.information>span p { font-size:14px; color:#444; line-height:30px;}
+.information>span { float:left; padding-left:20px; width:650px}
+.link { color:#fc5115; font-size:14px;}
+.formpage p.safelev { text-indent:2em; font-size:14px; color:#444; line-height:50px;}
+.formpage p.safelev i { font-style:normal; color:#948f8f}
+.formpage p.safelev b { font-size:24px; color:#ef0924; font-weight:normal}
+.safelist { padding-left:170px; }
+.safelist table td { height:150px}
+.sficon { display:block; height:80px; width:80px; position:relative; background:url(../img/icons.png) no-repeat ;}
+.sficon em { width:29px; height:29px; background:url(../img/icons.png) no-repeat; position:absolute; right:10px; bottom:-6px; z-index:2}
+.sficon.sfi1 { background-position:0 -517px}
+.sficon.sfi2 { background-position:0 -617px}
+.sficon.sfi3 { background-position:0 -723px}
+.sficon.sfi4 { background-position:0 -816px}
+.sficon em.yes { background-position:-2px -908px}
+.sficon em.no { background-position:-30px -908px}
+
+.sftit { display:block; width:100px; }
+.sftit p { font-size:18px; color:#212320;text-align:center; margin-top:15px}
+.sftit p i { font-size:14px; font-style:normal; }
+.sftit p i.green { color:#23be9c;}
+.sftit p i.red { color:#F00}
+.sftext p { font-size:14px; color:#707473; line-height:25px; width:400px; padding-left:30px}
+.sfbtn a { display:block; width:109px; height:30px; text-align:center; line-height:30px; background:#fc5115; color:#fff; font-size:16px; margin-left:100px; margin-top:15px}
+.sfbtn a:hover { background:#F60}
+
+.information form { float:left; padding-left:50px; font-size:14px; color:#444}
+.information form input.textput { background:#e9ebef; border:1px solid #acc5ac; font-size:14px; width:200px; padding:7px 5px; margin-right:5px}
+input.addr { background:#e9ebef; border:1px solid #acc5ac; font-size:14px; width:370px; padding:7px 5px}
+.information form td { height:50px}
+.information form td label { line-height:30px; margin-right:30px}
+.information form td label input { margin-left:5px}
+.greenbtn { display:inline-block; margin-right:20px; width:100px; height:30px; background:#50d18d; line-height:30px; text-align:center; color:#fff; font-size:16px; border:1px solid #50d18d; }
+.greenbtn:hover { background:#57dd96;}
+.wrrong { line-height:30px; font-size:14px; color:#F00; padding-left:5px; margin-left:20px}
+
+/*所在地区三级连选*/
+.address { position:relative}
+.city-picker-input {opacity: 0 !important;top: -9999px;left: -9999px; position: absolute;}
+.city-picker-span { position: relative; display: block; outline: 0;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); border: 1px solid #acc5ac; color: #ccc; cursor: pointer; float:left}
+.city-picker-span > .placeholder {color: #aaa; margin-left:5px}
+.city-picker-span > .arrow {  position: absolute; top: 50%; right: 8px; width: 10px;  margin-top: -3px; height: 5px; background: url(../img/drop-arrow.png) -10px -25px no-repeat;}
+.city-picker-span.focus,
+.city-picker-span.open { border-bottom-color: #acc5ac;}
+.city-picker-span.open > .arrow { background-position: -10px -10px;}
+.city-picker-span > .title > span { color: #333; padding: 5px; border-radius: 3px;}
+.city-picker-span > .title > span:hover {}
+.city-picker-dropdown { position: absolute; width: 315px; left: -9999px; top: -9999px;outline: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 999999;  display: none;   min-width: 330px; margin-bottom: 20px;}
+.city-select-wrap { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);}
+.city-select-tab { border-bottom: 1px solid #ccc; background: #f0f0f0; font-size: 13px;}
+.city-select-tab > a { display: inline-block; padding: 8px 22px; border-left: 1px solid #ccc; border-bottom: 1px solid transparent; color: #4D4D4D; text-align: center;  outline: 0; text-decoration: none; cursor: pointer;font-size: 14px; margin-bottom: -1px;}
+.city-select-tab > a.active {  background: #fff;  border-bottom: 1px solid #fff; color: #56c68b;}
+.city-select-tab > a:first-child { border-left: none;}
+.city-select-tab > a:last-child.active { border-right: 1px solid #ccc;}
+.city-select-content { min-height: 10px; background-color: #fff; padding: 10px 15px;}
+.city-select { font-size: 13px;}
+.city-select dl {line-height: 2; clear: both;padding: 3px 0;  margin: 0;}
+.city-select dt { position: absolute; width: 2.5em; font-weight: 500;  text-align: right; line-height: 2;}
+.city-select dd { margin-left: 0; line-height: 2;}
+.city-select.province dd {margin-left: 3em;}
+.city-select a {  display: inline-block;padding: 0 10px; outline: 0;text-decoration: none; white-space: nowrap; margin-right: 2px;text-decoration: none; color: #333; cursor: pointer;}
+.city-select a:hover,
+.city-select a:focus { background-color: #f1f8ff; border-radius: 2px; color: #56c68b;}
+.city-select a.active { background-color: #EBF5E9;color: #56c68b;border-radius: 2px;}
+
+
+.information form.datable { float:none; padding:0}
+.information form.datable table { border:1px solid #ccc;border-right:none }
+.information form.datable table td { color:#444; font-size:14px; text-align:center; border-top:1px solid #ccc; border-right:1px solid #ccc; height:30px; background:#fff;}
+.information form.datable table th { border-right:1px solid #ccc; color:#000; font-size:16px; height:30px; background:#e2f1e1; }
+.dolink { display:inline-block; background:#DBDBDB; border:#ccc; color:#444; border:1px solid #ccc; padding:2px 10px; border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px}
+.dolink:hover { background:#BBB}
+.greenbtn.add { position:absolute; right:0; top:5px;height:25px; line-height:25px;border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px}
+#mask {width: 100%;height: 100%;background: url(../img/mask.png);position: fixed;display: none;left: 0px;top: 0px;z-index: 60;}
+.popbox {width:800px; display:none; background:#fff; border:1px solid #dddbdb; height:500px; position:fixed; z-index:1000; left:30%;top:120px; overflow:auto}
+.popbox h2 {height:55px;line-height:55px; font-weight:normal; padding-left:50px;font-size:20px; border-bottom:1px solid #dddbdb}
+.popbox form { width:700px; margin:0 auto}
+.popbox table td { height:40px; font-size:14px;}
+.popbox table td .textput { padding:7px 5px; border:1px solid #b0c7b0}
+.tip { color:#999; font-size:14px; padding-left:5px}
+.popbox table td select { width:181px; border:1px solid #b0c7b0; padding:5px 0}
+.linebtn { display:inline-block;margin-right: 20px; width: 100px; height: 30px; line-height: 30px; text-align: center; color: #50d18d;font-size: 16px; border: 1px solid #50d18d;}
+.linebtn:hover { color:#44c280; border-color:#44c280}
+.popbox table td select.smsel { width:88px; padding:7px 5px; border:1px solid #b0c7b0}
+.popbox table td input.smput{ width:100px; padding:8px 5px; color:#999; font-family:"微软雅黑"; float:left; margin-left:5px; border:1px solid #acc5ac}
+.popbox table td label { margin-right:20px; line-height:45px; display:inline-block; width:70px;}
+.popbox table td input.smput.nofl { float:none; border-top:none;border-left:none; border-right:none; width:300px;}
+.popbox table td .wrrong { margin:0}
+.information form.datable table td p{ text-align:left; padding:0 5px; line-height:25px;}
+.information form.datable table td span { padding:20px 0; display:block}
+.information form.datable table th.linecc { border-top:1px solid #ccc; min-height:120px}
+.formpage h3.formtit { text-align:center; line-height:30px; font-size:24px;}
+
