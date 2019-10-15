@@ -27,6 +27,7 @@ hs_err_pid*
 
 # Intellj Idea project setting file
 *.iml
+.idea/
 
 # Eclipse Project files
 .settings/
