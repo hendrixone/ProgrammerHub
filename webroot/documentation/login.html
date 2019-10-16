@@ -59,28 +59,26 @@
         <div class="container">
         <div style="height: 25%"></div>
             <div class="row">
+                <div class="container">
+                    <h2>登陆程序员小屋</h2>
+                </div>
                 <div class="container" style="width: 400px;">
-                    <form class="form" method="post" action="http://www.programmerhub.com/action/user/login">
+                    <form class="form">
                         <div class="card-body">
-                            <div class="input-group form-group-no-border">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
-                                </span>
-                                <input type="text" class="form-control" id="username" placeholder="用户名">
-                            </div>
                             <div class="input-group form-group-no-border">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons ui-1_email-85"></i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="邮箱">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="邮箱" name="username">
                             </div>
+                            <div class="input-group form-group-no-border">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons now-ui-icons objects_key-25"></i>
+                                </span>
+                                <input type="text" class="form-control" name="password" id="password" placeholder="密码">
+                            </div>
+
                             <!-- If you want to add a checkbox to this form, uncomment this code -->
-                            <div class="checkbox pull-left">
-                                <input id="rememberId" name="rememberId" type="checkbox" value="true">
-                                    <label for="rememberId">
-                                    记住用户名
-                                    </label>
-                            </div>
                         </div>
                         <div class="footer text-center">
                             <button class="btn btn-primary btn-round" type="submit">登 陆</button>
@@ -144,16 +142,60 @@
 
 <script type="text/javascript" src="../assets/js/jquery.cookie.js"></script>
 
-    <script type="text/javascript">
-        window.onload=function(){
-            var userId = $.cookie("SAVED-USERNAME");
-            if(!userId){
-                return ;
-            }else{
-                $("#username").val(userId)
-            }
+<script type="text/javascript">
+    window.onload=function(){
+        var userId = $.cookie("SAVED-USERNAME");
+        if(!userId){
+            return ;
+        }else{
+            $("#username").val(userId)
+        }
     }
-    </script>
+    //@ sourceURL=login_ajax.js
+$(function(){
+    
+    //给form表单添加submit事件
+    $("form").submit(function(){
+        return login();
+    });
+    
+});
+function login(){
+    //获取页面数据
+    var userName=$("form input[name=username]").val();
+    var userPassword=$("form input[name=password]").val();
+    if(userName==""){
+        $("form table tr:eq(0) td span").html("用户名不能为空");
+        return false;
+    }
+    if(userPassword==""){
+        $("form table tr:eq(1) td span").html("密码不能为空");
+        return false;
+    }
+
+    $.ajax({
+        url:"http://www.programmerhub.com/action/user/login",
+        type:"get",
+        data:{"userName":userName,"userPassword":userPassword},
+        dataType:"json",
+        success:function(result){
+            //result是服务端返回的数据
+            if(result.status==200){
+                //window.location.href="index.html";
+                window.location.href="index.html";
+            }else{
+                alert("登录失败");
+            }
+        },
+        error:function(){
+            alert("请求失败!");
+        }
+    });
+    
+    return false;
+}
+
+</script>
 
 
 </html>
