@@ -12,7 +12,7 @@
 请克隆主分支到本地创建个人分支（自己名字命名），修改请直接提交到个人分支，注意不要与其他人工作重复。仓库已经设置排除所有项目本地配置文件：.setting(Eclipse), .idea(Intellj Idea)，克隆至本地应使用ide导入，忽略规则请见[.gitignore](https://github.com/hendrixone/ProgrammerHub/blob/master/.gitignore)。项目及小组说明文档请见[说明文档](https://github.com/hendrixone/ProgrammerHub/blob/master/说明文档.md)
 
 ### 网站访问IP地址
-[173.199.90.208](http://173.199.90.208)
+[144.202.109.57](http://144.202.109.57)
 
 ## 计划中的功能（以优先度排序）
 
