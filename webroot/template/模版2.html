@@ -23,6 +23,7 @@
     <meta name="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
     
     
+    
 </head>
 
 <body class="template-page sidebar-collapse">
@@ -30,24 +31,23 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top " color-on-scroll="400">
         <div class="container">
             <div class="dropdown button-dropdown">
-            <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
-                <span class="button-bar"></span>
-                <span class="button-bar"></span>
-                <span class="button-bar"></span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-header">Dropdown header</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">One more separated link</a>
+                <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-header">Dropdown header</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">One more separated link</a>
+                </div>
             </div>
-        </div>
             <div class="navbar-translate">
-
                 <a class="navbar-brand" href="/" rel="tooltip" title="返回首页" data-placement="bottom" target="_blank">
                     Programmer Hub
                 </a>
@@ -65,25 +65,10 @@
                             <p>GitHub Page</p>
                         </a>
                     </li>
-                    <li class="nav-item dropdown" id="user-menu">
-                        <a class="nav-link dropdown-toggle" id="user-dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="http://www.programmerhub.com/documentation/personal-page.html">个人界面</a>
-                            <a class="dropdown-item" href="http://www.programmerhub.com/documentation/message.html">消息</a>
-                            <a class="dropdown-item" href="http://www.programmerhub.com/action/logout">注销</a>
-                        </div>
-                    </li>
-                    <li class="nav-item loginbutton">
-                        <a class="nav-link" href="http://www.programmerhub.com/documentation/login.html">
-                            <i class="now-ui-icons users_single-02"></i>
-                            <p>请先登录</p>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
     <!-- End Navbar -->
     <div class="wrapper">
         <div class="page-header">
@@ -122,7 +107,7 @@
                     &copy;
                     <script>
                         document.write(new Date().getFullYear())
-                    </script>, Originally Designed by Invision. Coded by Creative Tim. Redesign by 青岛啤酒8厂🍺
+                    </script>, Originally Designed by Invision. Coded by Creative Tim. Redesign by 青岛啤酒8厂
                 </div>
             </div>
         </footer>
@@ -142,42 +127,5 @@
 <script src="../assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-
-<script type="text/javascript" src="../assets/js/jquery.cookie.js"></script>
-<!-- Ajax 获取用户名 -->
-    <script type="text/javascript">
-        window.onload=function(){
-            $("#user-menu").hide();
-            $("#loginbutton").hide();
-            var userId="";
-            var _ticket = $.cookie("EM_TICKET");
-            if(!_ticket){
-                $(".menu1").show();
-                return ;
-            }
-
-            //当dataType类型为jsonp时，jQuery就会自动在请求链接上增加一个callback的参数
-            $.ajax({
-                url : "http://www.programmerhub.com/action/user/query/" + _ticket,
-                dataType : "json",
-                type : "GET",
-                success : function(data){
-                    if(data.status == 200){
-                        var _data = JSON.parse(data.data);//jackson
-                        var html = "欢迎回来"+_data.userName
-                        userId=_data.userId;
-                        $("#user-dropdown-toggle").html(html);
-                        $("#user-menu").show();
-                    } else {
-                        $("#loginbutton").show();
-                    }
-                },
-                error : function(){
-                    alert("user ajax error");
-                }
-            }
-        );
-    }
-    </script>
 
 </html>

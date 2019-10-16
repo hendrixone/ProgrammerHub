@@ -276,7 +276,6 @@
                 dataType : "json",
                 type : "GET",
                 success : function(data){
-                    alert("hello");
                     if(data.status == 200){
                         var _data = JSON.parse(data.data);//jackson
                         var html = "欢迎回来"+_data.userName
