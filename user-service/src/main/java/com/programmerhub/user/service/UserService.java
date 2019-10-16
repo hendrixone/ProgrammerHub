@@ -1,4 +1,4 @@
-package com.programmerHub.user.service;
+package com.programmerhub.user.service;
 
 import org.springframework.stereotype.Service;
 
