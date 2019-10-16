@@ -1,0 +1,28 @@
+server.port=8103
+#关闭敏感头
+zuul.sensitive-headers=
+#zuul微服务相关
+spring.application.name=zuul-service
+#路由规则 /order-test/**转发给order-test的服务
+#serivce-ribbon service-hi
+#zuul.routes.hi.path=/zuul-hi/**
+#zuul.routes.hi.serviceId=service-hi
+#zuul.routes.ribbon.path=/zuul-ribbon/**
+#zuul.routes.ribbon.serviceId=service-ribbon
+#zuul.routes.pay.path=/zuul-pay/**
+#zuul.routes.pay.serviceId=order-test
+zuul.strip-prefix=true
+zuul.routes.cart.path=/zuul-cart/**
+zuul.routes.cart.serviceId=cartservice
+zuul.routes.product.path=/zuul-product/**
+zuul.routes.product.service-id=productservice
+zuul.routes.user.path=/zuul-user/**
+zuul.routes.user.service-id=userservice
+zuul.routes.img.path=/zuul-img/**
+zuul.routes.img.service-id=imgservice
+zuul.routes.order.path=/zuul-order/**
+zuul.routes.order.service-id=orderservice
+zuul.routes.search.path=/zuul-search/**
+zuul.routes.search.service-id=searchservice
+#eureka server
+eureka.client.serviceUrl.defaultZone=http://localhost:8888/eureka

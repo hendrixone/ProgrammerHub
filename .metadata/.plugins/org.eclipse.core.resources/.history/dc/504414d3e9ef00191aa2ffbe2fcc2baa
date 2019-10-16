@@ -1,0 +1,5 @@
+package com.programmerHub.user.service;
+
+public class UserService {
+
+}
