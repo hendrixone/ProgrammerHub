@@ -22,12 +22,10 @@ import org.springframework.stereotype.Service;
 public class UserService {
 	@Autowired
 	private UserMapper userMapper;
-	public int checkUserExists(String userName) {
-		//返回1存在 0不存在
-		return userMapper.
-		selectUserCountByUserName(userName);
-	}
-	public void doRegister(User user) {	
+	public void doRegister(User user) throws Exception {	
+		if(userMapper.selectUserByEmail(user.getEmail()) != null){
+			throw new Exception("用户已存在");
+		}
 		//对密码进行加密
 		//对密码加密方式 安全可以使用md5加盐
 		//user.getUserPassword
