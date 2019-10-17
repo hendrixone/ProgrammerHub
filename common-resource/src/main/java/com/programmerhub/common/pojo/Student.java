@@ -1,4 +1,4 @@
-package com.programmerhub.common.pojo;
+﻿package com.programmerhub.common.pojo;
 /**
  * 
  * @author sunxilin
@@ -7,53 +7,53 @@ package com.programmerhub.common.pojo;
  */
 public class Student {
 	private int studentId;//学生Id
-	private String name;//学生姓名
-	private String sex;//学生性别
-	private String phone;//学生电话
-	private Clazz clazz;//学生所属班级
-	private String photo;//学生照片
-	private String email;//邮箱
-	public int getStudentId() {
-		return studentId;
-	}
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getSex() {
-		return sex;
-	}
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	public Clazz getClazz() {
-		return clazz;
-	}
-	public void setClazz(Clazz clazz) {
-		this.clazz = clazz;
-	}
-	public String getPhoto() {
-		return photo;
-	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
+		private int studentId;//学生Id
+		private String studentName;//学生姓名
+		private String studentSex;//学生性别
+		private String studentPhone;//学生电话
+		private String className;//学生所属班级
+		private String studentPhoto;//学生照片
+		private String studentEmail;//邮箱
+		public int getStudentId() {
+			return studentId;
+		}
+		public void setStudentId(int studentId) {
+			this.studentId = studentId;
+		}
+		public String getStudentName() {
+			return studentName;
+		}
+		public void setStudentName(String studentName) {
+			this.studentName = studentName;
+		}
+		public String getStudentSex() {
+			return studentSex;
+		}
+		public void setStudentSex(String studentSex) {
+			this.studentSex = studentSex;
+		}
+		public String getStudentPhone() {
+			return studentPhone;
+		}
+		public void setStudentPhone(String studentPhone) {
+			this.studentPhone = studentPhone;
+		}
+		public String getClassName() {
+			return className;
+		}
+		public void setClassName(String className) {
+			this.className = className;
+		}
+		public String getStudentPhoto() {
+			return studentPhoto;
+		}
+		public void setStudentPhoto(String studentPhoto) {
+			this.studentPhoto = studentPhoto;
+		}
+		public String getStudentEmail() {
+			return studentEmail;
+		}
+		public void setStudentEmail(String studentEmail) {
+			this.studentEmail = studentEmail;
+		}
 }
