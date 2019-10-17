@@ -16,7 +16,7 @@
 
 | 字段        | 类型          | 注释           |
 | ----------- | ------------- | -------------- |
-| id          | int           | ID             |
+| id          | inf           | ID             |
 | name        | String        | 班级名称       |
 | teacher     | String        | 班主任         |
 | studentList | List<Student> | 班级学生的集合 |
