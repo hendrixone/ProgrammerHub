@@ -68,7 +68,7 @@
                     <li class="nav-item dropdown" id="user-menu">
                         <a class="nav-link dropdown-toggle" id="user-dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="http://www.programmerhub.com/documentation/user.html">个人界面</a>
+                            <a class="dropdown-item" href="http://www.programmerhub.com/documentation/personal-page.html">个人界面</a>
                             <a class="dropdown-item" href="http://www.programmerhub.com/documentation/message.html">消息</a>
                             <a class="dropdown-item" href="http://www.programmerhub.com/action/logout">注销</a>
                         </div>
@@ -122,7 +122,7 @@
                     &copy;
                     <script>
                         document.write(new Date().getFullYear())
-                    </script>, Designed by Invision. Coded by Creative Tim.
+                    </script>, Originally Designed by Invision. Coded by Creative Tim. Redesign by 青岛啤酒8厂🍺
                 </div>
             </div>
         </footer>
@@ -162,7 +162,6 @@
                 dataType : "json",
                 type : "GET",
                 success : function(data){
-                    alert("hello");
                     if(data.status == 200){
                         var _data = JSON.parse(data.data);//jackson
                         var html = "欢迎回来"+_data.userName

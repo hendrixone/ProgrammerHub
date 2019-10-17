@@ -2,14 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>programmerhub-common-resources</artifactId>
+  <artifactId>common-resources</artifactId>
   <packaging>jar</packaging>
 	<parent>
-		<groupId>com.ProgrammerHub</groupId>
+		<groupId>com.programmerhub</groupId>
 		<artifactId>Parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-  <name>programmerhub-common-resources</name>
+  <name>common-resources</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,7 +21,7 @@
  		<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-web</artifactId>
   	</dependency>
-  
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
