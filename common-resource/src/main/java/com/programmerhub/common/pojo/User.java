@@ -1,4 +1,4 @@
-package com.programmerhub.common.pojo;
+﻿package com.programmerhub.common.pojo;
 /**
  * 
  * @author sunxilin
@@ -9,7 +9,7 @@ public class User {
 
 	private int userId;//UserId
 	private String userPassword;//user密码
-	private String email;//邮箱
+	private String userEmail;//邮箱
 	private int userType;//用户级别
 	public int getUserId() {
 		return userId;
@@ -23,10 +23,10 @@ public class User {
 	public void setPassword(String password) {
 		this.userPassword = password;
 	}
-	public String getEmail() {
+	public String getUserEmail() {
 		return email;
 	}
-	public void setEmail(String email) {
+	public void setUserEmail(String email) {
 		this.email = email;
 	}
 	public int getUserType() {
