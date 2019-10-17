@@ -12,6 +12,13 @@ public class User {
 		private String userEmail;//邮箱
 		private int userType;//用户级别
 		private String className;//所属班级名称
+		private String userName;//学生姓名
+		public String getUserName() {
+			return userName;
+		}
+		public void setUserName(String userName) {
+			this.userName = userName;
+		}
 		public int getUserId() {
 			return userId;
 		}
