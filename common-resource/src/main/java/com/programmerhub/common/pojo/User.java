@@ -2,28 +2,25 @@
 /**
  * 
  * @author sunxilin
- * user封装的JavaBean
+ * 学生类JavaBean
  *
  */
 public class User {
-
-	private int userId;//UserId
-		private String userPassword;//user密码
-		private String userEmail;//邮箱
+	private int studentId;//学生Id
+		private int studentId;//学生Id
+		private String studentName;//学生姓名
+		private String studentSex;//学生性别
+		private String studentPhone;//学生电话
+		private String className;//学生所属班级
+		private String studentPhoto;//学生照片
+		private String studentEmail;//邮箱--作为账号使用
 		private int userType;//用户级别
-		private String className;//所属班级名称
-		private String userName;//学生姓名
-		public String getUserName() {
-			return userName;
+		private String userPassword;//user密码
+		public int getUserType() {
+			return userType;
 		}
-		public void setUserName(String userName) {
-			this.userName = userName;
-		}
-		public int getUserId() {
-			return userId;
-		}
-		public void setUserId(int userId) {
-			this.userId = userId;
+		public void setUserType(int userType) {
+			this.userType = userType;
 		}
 		public String getUserPassword() {
 			return userPassword;
@@ -31,17 +28,29 @@ public class User {
 		public void setUserPassword(String userPassword) {
 			this.userPassword = userPassword;
 		}
-		public String getUserEmail() {
-			return userEmail;
+		public int getStudentId() {
+			return studentId;
 		}
-		public void setUserEmail(String userEmail) {
-			this.userEmail = userEmail;
+		public void setStudentId(int studentId) {
+			this.studentId = studentId;
 		}
-		public int getUserType() {
-			return userType;
+		public String getStudentName() {
+			return studentName;
 		}
-		public void setUserType(int userType) {
-			this.userType = userType;
+		public void setStudentName(String studentName) {
+			this.studentName = studentName;
+		}
+		public String getStudentSex() {
+			return studentSex;
+		}
+		public void setStudentSex(String studentSex) {
+			this.studentSex = studentSex;
+		}
+		public String getStudentPhone() {
+			return studentPhone;
+		}
+		public void setStudentPhone(String studentPhone) {
+			this.studentPhone = studentPhone;
 		}
 		public String getClassName() {
 			return className;
@@ -49,6 +58,16 @@ public class User {
 		public void setClassName(String className) {
 			this.className = className;
 		}
-	
-	
+		public String getStudentPhoto() {
+			return studentPhoto;
+		}
+		public void setStudentPhoto(String studentPhoto) {
+			this.studentPhoto = studentPhoto;
+		}
+		public String getStudentEmail() {
+			return studentEmail;
+		}
+		public void setStudentEmail(String studentEmail) {
+			this.studentEmail = studentEmail;
+		}
 }
