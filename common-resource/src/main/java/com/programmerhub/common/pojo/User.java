@@ -3,10 +3,10 @@
  * 
  * @author sunxilin
  * 学生类JavaBean
+ * 合并对象
  *
  */
 public class User {
-	private int studentId;//学生Id
 		private int studentId;//学生Id
 		private String studentName;//学生姓名
 		private String studentSex;//学生性别
