@@ -1,4 +1,4 @@
-﻿package com.programmerhub.common.pojo;
+package com.programmerhub.common.pojo;
 
 /**
  * @author sunxilin
