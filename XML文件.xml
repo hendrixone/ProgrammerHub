@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.user.mapper.UserMapper">
+	<resultMap type="User" id="User_user">
+		<result property="id" column="user_Id"/>
+		<result property="password" column="user_Password"/>
+		<result property="email" column="user_Email"/>
+		<result property="type" column="user_Type"/>
+		<result property="name" column="user_Name"/>
+		<result property="phone" column="user_Phone"/>
+		<result property="avtar" column="user_Avtar"/>
+		<result property="className" column="user_ClassName"/>
+		<result property="gender" column="user_Gender"/>
+	</resultMap>
+	<!-- 注册业务 判断用户名是否相同-->
+	<select id="注册"
+	parameterType="String" resultType="int">
+		select count(id) from User
+		where user_Name=#{user_Name};
+	</select>
+	<!-- 判断用户名密码正不正确 -->
+	<selecr id="登录" parameterType="String" resultType="int">
+		select user_id from User
+		where user_Password=#{password}
+	</selecr>
+	<!-- 插入用户数据 -->
+	<insert id="注册成功" parameterType="User">
+		insert into User (
+			id,name,
+			gender,phone,
+			className,avtar,
+			email,password,
+			type
+		) values(
+			#{user_Id},
+			#{user_Name},
+			#{user_Gender},
+			#{user_Phone},
+			#{user_ClassName},
+			#{user_Avtar},
+			#{user_Email},
+			#{user_Password},
+			#{user_Type}
+		)
+	</insert>
+	
+</mapper> 
+
+
+
+
+
+
+
+
+
+
+
+
