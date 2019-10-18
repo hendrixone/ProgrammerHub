@@ -15,7 +15,19 @@ import com.programmerhub.user.service.UserService;
 import redis.clients.jedis.JedisCluster;
 
 @RestController
-@RequestMapping("")
-public class UserController{
-
+@RequestMapping
+public class UserController {
+	@Autowired
+	private UserService userService;
+	//注册表单提交，user对象接收数据
+	@RequestMapping("register")
+	public SysResult doRegister(User user){
+		try{ 
+			userService.doRegister(user);
+			return SysResult.ok();
+		}catch(Exception e){
+			e.printStackTrace();
+			return SysResult.build(201, e.getMessage(), null);
+		}
+	}
 }
