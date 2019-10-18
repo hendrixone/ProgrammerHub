@@ -6,6 +6,10 @@
 		insert into user(email,password) values(#{email},#{password});
 	
 	</insert>
+
+	<select id="selectUserByEmail" parameterType="String" resultType="User">
+		select * from user where email=#{email};
+	</select>
 </mapper> 
 
 

@@ -14,9 +14,6 @@ import org.springframework.stereotype.Service;
  * @author sunxilin
  * 业务层UserService代码
  * 注册用户
- * @param userName 用户名
- * @param userPassword 用户密码
- * @param Email邮箱
  */
 @Service
 public class UserService {

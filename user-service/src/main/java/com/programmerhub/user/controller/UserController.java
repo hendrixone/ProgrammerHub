@@ -15,7 +15,6 @@ import com.programmerhub.user.service.UserService;
 import redis.clients.jedis.JedisCluster;
 
 @RestController
-@RequestMapping
 public class UserController {
 	@Autowired
 	private UserService userService;
