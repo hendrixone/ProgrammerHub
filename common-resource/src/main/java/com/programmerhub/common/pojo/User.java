@@ -5,30 +5,30 @@ package com.programmerhub.common.pojo;
  * 用户对象
  */
 public class User {
-    private int id;//学生Id
-    private String name;//姓名
+    private int UserId;//学生Id
+    private String userName;//姓名
     private String gender;//性别
     private String phone;//电话
     private String className;//班级
-    private String avtar;//照片
-    private String email;//邮箱--作为账号使用
-    private int type;//用户级别
-    private String password;//user密码
+    private String avatar;//照片
+    private String UserEmail;//邮箱--作为账号使用
+    private int UserType;//用户级别
+    private String UserPassword;//user密码
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return UserId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        UserId = userId;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getGender() {
@@ -55,35 +55,35 @@ public class User {
         this.className = className;
     }
 
-    public String getAvtar() {
-        return avtar;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setAvtar(String avtar) {
-        this.avtar = avtar;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUserEmail() {
+        return UserEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserEmail(String userEmail) {
+        UserEmail = userEmail;
     }
 
-    public int getType() {
-        return type;
+    public int getUserType() {
+        return UserType;
     }
 
-    public void setType(int type) {
-        this.type = type;
+    public void setUserType(int userType) {
+        UserType = userType;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUserPassword() {
+        return UserPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUserPassword(String userPassword) {
+        UserPassword = userPassword;
     }
 }
